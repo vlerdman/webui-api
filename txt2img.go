@@ -67,8 +67,8 @@ type Txt2Image struct {
 	//  So I decided to reverse it. This set to true and "override_settings_restore_afterwards": false and vice versa
 	DoNotOverrideSettingsRestoreAfterwards bool `json:"override_settings_restore_afterwards"`
 
-	ScriptName string   `json:"script_name,omitempty"`
-	ScriptArgs []string `json:"script_args,omitempty"`
+	ScriptName string `json:"script_name,omitempty"`
+	ScriptArgs []any  `json:"script_args,omitempty"`
 
 	// Original field was `SendImages` but since the default value is `true`. it's quite tricky to do this in GO
 	//

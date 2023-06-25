@@ -55,8 +55,8 @@ type Img2Img struct {
 	//  So I decided to reverse it. This set to true and "override_settings_restore_afterwards": false and vice versa
 	DoNotOverrideSettingsRestoreAfterwards bool `json:"override_settings_restore_afterwards"`
 
-	ScriptName string   `json:"script_name,omitempty"`
-	ScriptArgs []string `json:"script_args,omitempty"`
+	ScriptName string `json:"script_name,omitempty"`
+	ScriptArgs []any  `json:"script_args,omitempty"`
 
 	IncludeInitImages bool `json:"include_init_images,omitempty"` // I don't even know what this is. But it has just a little impact on the result images
 
